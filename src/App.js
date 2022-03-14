@@ -22,7 +22,7 @@ function App() {
       phone: phone.value,
       message: message.value,
     };
-    let response = await fetch('baseUrl', {
+    let response = await fetch('https://oluyinka-back-end.herokuapp.com/contact' || 'baseUrl', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
@@ -722,7 +722,7 @@ function App() {
             <div className='row'>
               <div className='col-lg-12'>
                 <div className='db_portfolio_menu wow fadeInUp'>
-                  <ul
+                  {/* <ul
                     className='nav nav-pills mb-3'
                     id='pills-tab'
                     role='tablist'
@@ -779,7 +779,7 @@ function App() {
                         Others
                       </a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
               <div className='col-lg-12'>
@@ -1025,7 +1025,7 @@ function App() {
                             <h5 className='title'>Wanna feel it?</h5>
                             <span className='sub-title'>Just click it!</span>
                             <a
-                              href='https://www.livescore.com/en/'
+                              href='https://www.afya.care'
                               target='_blank'
                               rel='noopener noreferrer'
                             >
